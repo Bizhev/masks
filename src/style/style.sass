@@ -1,0 +1,48 @@
+.slider
+    width: 1200px
+    height: 900px
+    position: relative
+    overflow: hidden
+    &__super-wrap, 
+        position: absolute
+        width: 1200px
+        height: 900px
+        top: 0
+        left: 0
+    &__1
+        clip-path: url(#myPath1)
+        .slider__wrap
+            transition-timing-function: cubic-bezier(0.82, 1.07, 1, 1)
+    &__2
+        clip-path: url(#myPath2)
+        .slider__wrap
+            transition-timing-function: cubic-bezier(0.25, 0.99, 0.47, 0.74)
+    &__3
+        clip-path: url(#myPath3)
+        .slider__wrap
+            transition-timing-function: cubic-bezier(0.06, 0.48, 0.85, 0.9)
+
+    &__wrap
+        position: absolute
+        width: 1200px
+        height: 900px
+        top: 0
+        left: 0
+        transfoerm: translate(0,0)
+        width: 1200px
+        height: 900px
+        transition: transform 2s linear
+        .a &
+            transform: translate(-100%,0)
+    &__current-slide,&__new-slide
+        position: absolute
+        width: 1200px
+        height: 900px
+        background-size: cover
+        background-position: 50% 50%
+    &__current-slide
+        background:url("../img/1.jpg")
+    &__new-slide
+        transform: translate(100%,0)
+        background:url('../img/2.jpg')
+        
