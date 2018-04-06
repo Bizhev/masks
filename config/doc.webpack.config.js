@@ -4,8 +4,8 @@ process.env.NODE_ENV = 'development';
 
 let distPaths = {
   // dist - original path
-  // doc - for github pages
-  root: "doc"
+  // docs - for github pages
+  root: "docs"
 }
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");

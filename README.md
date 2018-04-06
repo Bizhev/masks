@@ -1,9 +1,9 @@
-# W - SERVER
+# Masks on SVG and WebGL
 
-Template easy-server on use  node.js, webpack,babel-js, sass
-## used tools
+## Used tools
 
 1. [clipPath](https://developer.mozilla.org/ru/docs/Web/CSS/clip-path)
+1. [TimelineMax](https://greensock.com/docs/TimelineMax)
 
 ## Getting Started
 
